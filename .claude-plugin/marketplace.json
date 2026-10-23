@@ -1,0 +1,30 @@
+{
+  "name": "client-plugins",
+  "owner": {
+    "name": "IgniteAI Solutions"
+  },
+  "metadata": {
+    "description": "Claude Cowork plugins built for {{CLIENT_NAME}} by IgniteAI Solutions.",
+    "version": "0.2.0"
+  },
+  "plugins": [
+    {
+      "name": "client-cowork-setup",
+      "source": "./plugins/client-cowork-setup",
+      "description": "Sets a {{CLIENT_NAME}} seat up on Claude Cowork and keeps it improving. Drafts only, never sends.",
+      "version": "0.2.0",
+      "author": {
+        "name": "IgniteAI Solutions"
+      }
+    },
+    {
+      "name": "multiplayer-ai-starter",
+      "source": "./plugins/multiplayer-ai-starter",
+      "description": "A system that knows what is going on in the business and keeps every person informed: progress, actions, next steps. Takes a team from single-player AI to a shared agent through a readiness check and a 30-day pilot. People decide; it informs. Advises, never enforces.",
+      "version": "0.1.1",
+      "author": {
+        "name": "IgniteAI Solutions"
+      }
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: briefing-from-repeats
+expected_outcome: |
+  Specifies a morning briefing to #ops in the progress, actions, next steps shape, with the most-asked repeat at the top of its section and Nia reviewing the first five.
+context:
+  scaffold_script: place-files.sh

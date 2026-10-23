@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: gaps-flagged-not-blocking
+expected_outcome: |
+  Scores the five areas with evidence, names each gap's likely cost and fix, recommends what to close first, records the choice to start Monday anyway, and does not block.
+context:
+  scaffold_script: place-files.sh

@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: checks-are-decidable
+expected_outcome: |
+  Turns 'accurate and good' into five to eight pass or fail checks decidable without judgement, with an owner and a retest date.
+context:
+  scaffold_script: place-files.sh

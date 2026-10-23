@@ -1,0 +1,86 @@
+# [COMPANY], business context
+
+The shared file. Every seat reads it, so a change here reaches everybody.
+
+Written from the business interview on [DATE]. Owned by [NAME].
+
+## What the firm does
+
+[From question 1, in the words they would use with a customer rather than the words on
+the website.]
+
+[From question 2. How long it has been going and how it started.]
+
+## What it does better than the competition
+
+[Question 4.]
+
+## The people
+
+| Name | Role | Responsible for | Uses the system |
+|---|---|---|---|
+| | | | |
+
+[From questions 6 and 7. Name the one person who has to want this for it to work.]
+
+Judgement calls sit with [question 8]. The knowledge that would walk out the door if
+they left belongs to [question 9].
+
+## How a job runs
+
+[Question 11, first enquiry to getting paid, in order, with who does each step.]
+
+Where it stalls: [question 12.]
+
+The same every time: [question 13.] Changes job to job: [question 13.]
+
+Where work gets rebuilt or retyped: [question 14.]
+
+## The systems
+
+| System | What it is for | Access |
+|---|---|---|
+| | | read and write / read only / off limits |
+
+[Questions 22 to 24. Be exact about which are off limits.]
+
+Data lives at: [question 23.]
+
+Logins and permissions are controlled by [question 27].
+
+## What must not move
+
+[Questions 25 and 26. Confidential or regulated data. Anything that must not leave the
+building or go near an AI tool, with the contractual or legal reason attached.]
+
+## Decision rights
+
+The three gates live in `firewall.md`, written from questions 28 to 31 in the client's
+own words. This section names who holds each one.
+
+| Gate | Who decides |
+|---|---|
+| Send | |
+| Money | |
+| Publish | |
+
+## What would make them trust it, and what would make them switch it off
+
+[Question 32. Keep both answers. The second one is the early warning.]
+
+## What is in the way right now
+
+[Question 5, the thing they keep meaning to fix. And question 10, who is likely to
+resist and why.]
+
+Resistance is worth recording plainly and handling carefully. Singling somebody out as a
+laggard hardens them, so the record is for planning rather than for sharing.
+
+## Where they are aiming
+
+[Twelve month direction, from the warm-up and the closing questions.]
+
+---
+
+*Owned by [NAME]. Reviewed [DATE]. When something here stops being true, change it here,
+because every seat is reading it.*

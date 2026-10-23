@@ -1,0 +1,4 @@
+---
+description: Draft an email, document or client update that reads like you wrote it
+---
+Run the cowork-draft-in-my-voice skill. Read the voice profile at About Me/[name]-voice-profile.md first, the whole file including the writing samples at the bottom, and weigh those samples above the written description of the voice. Settle who reads this and what it has to do before drafting. Before handing it over, make every figure, date, name and agreed point name its source or carry NOT VERIFIED, and clear anything on the never list or the no-ai-slop standard. Then say which part of the profile you were unsure about and offer to write any correction back into the file. It drafts and never sends, money is read only, it never deletes and retired files move to an _archive subfolder, and anything client-facing waits for a person.

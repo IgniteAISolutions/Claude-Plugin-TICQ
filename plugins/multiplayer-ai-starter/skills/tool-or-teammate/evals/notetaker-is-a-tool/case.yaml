@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: notetaker-is-a-tool
+expected_outcome: |
+  Places the notetaker as a tool against the three capabilities, names what is lost, gives one smallest change for this week with an owner, and records it in the pilot file.
+context:
+  scaffold_script: place-files.sh

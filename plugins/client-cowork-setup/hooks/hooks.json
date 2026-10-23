@@ -1,0 +1,17 @@
+{
+  "description": "Refuses a general-purpose sub-agent sent without its model set. The sub-agent skill carries the same rule for surfaces where hooks do not run.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Agent|Task",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/sub-agent-model.js\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

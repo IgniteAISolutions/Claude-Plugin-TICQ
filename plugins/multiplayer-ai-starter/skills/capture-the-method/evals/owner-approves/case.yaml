@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: owner-approves
+expected_outcome: |
+  Drafts the method with what, why and how to apply, puts it to Ollie as owner of the supplier chase list, and records it in Method notes.
+context:
+  scaffold_script: place-files.sh

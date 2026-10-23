@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: batched-questions
+expected_outcome: |
+  Writes a dated retro with the agent's own lessons (the 11/11 catering miss), one batch of at most five questions, owners and dates on changes, and updates the pilot file.
+context:
+  scaffold_script: place-files.sh

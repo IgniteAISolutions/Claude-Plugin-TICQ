@@ -1,0 +1,70 @@
+# The target list
+
+Written on build day, before anybody leaves the room.
+
+This is the step that gets skipped because the room is tired, and it is the one defect
+that undid a whole client build. A principal on that build said out loud, on a recorded
+call, that without a target list and a deadline she would never find the time to start.
+She was right, and nobody had given her one.
+
+## Why a date rather than an intention
+
+"Go and play with it when you can" loses to email every single time. A named thing, by a
+named date, with a named person checking, is what turns a working install into a used
+one.
+
+## Week one
+
+| Who | What they will do | By when | Who is checking |
+|---|---|---|---|
+| [name] | [one specific task, from their own three-jobs answer] | [date] | [name] |
+
+One target each. Not three. Somebody who hits one target comes back for the next one.
+
+## The cadence after that
+
+A skill a week is the default, because a client asked for exactly that. Adjust it to the
+team rather than defending the number.
+
+| When | What | Who |
+|---|---|---|
+| Weekly | [The skill of the week, or the target] | [Champion] |
+| Weekly | 30 minute drop-in, same time each week | [Champion] |
+| Monthly | Check-in with [IgniteAI contact] | [Champion] |
+| Quarterly | Review what is installed, what gets used, what has gone stale | [Owner] |
+
+## The champion
+
+[Name.] Chosen because they are already getting something out of it, they are willing to
+build, and they are trusted enough to be told the truth. Seniority is not one of the
+three.
+
+What they get: permission to create skills, a named channel, a 30 minute orientation,
+and recognition that reaches whoever runs their appraisal.
+
+What they own: two or three starter skills in month one, one workshop where everybody
+present builds something for a real task, the team's plugin, and an honest report of
+what is stuck.
+
+What is not theirs: policy, spend, or blame. Anything touching client data, money, or
+leaving the building goes up rather than sideways.
+
+Honest time cost: three to four hours in month one, then one to two hours a month. If it
+is costing more than that, something upstream is wrong.
+
+## The next check-in
+
+[Date, in the diary, with an invitation sent. Not "we will sort something out".]
+
+## What gets measured, and when
+
+At day 30, walk the task inventory again and re-ask the two time columns. Report hours
+saved per week with the assumption visible, and say which rows were measured and which
+were estimated.
+
+Report a named result per person rather than a usage count. "[Name] now does the Monday
+report in 10 minutes instead of 90" lands. "Adoption is up" does not.
+
+---
+
+*Written on [DATE]. Reviewed [DATE].*

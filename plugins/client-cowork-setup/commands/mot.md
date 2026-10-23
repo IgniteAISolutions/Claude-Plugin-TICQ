@@ -1,0 +1,4 @@
+---
+description: Monthly MOT of context weight, contradictions, routing and the loop
+---
+Run the cowork-mot skill. Work the nine checks in order: the weight of everything that loads before work starts and a cut list that keeps the rules, contradictions between CLAUDE.md, MEMORY.md and the skills quoted with file and line, skill descriptions that would fire on the same words, file integrity, stale dates, whether the learning loop is still turning, settings drift against System/settings-record.md, every starter skill re-scored on its eval set, and duplicates in MEMORY.md. Write the memo to System/Reviews and the summary in chat under 250 words. Apply only the unambiguous, mark everything else as needing a yes from the named owner, and report anything you could not check with your own eyes as NOT VERIFIED. Never rewrite CLAUDE.md wholesale. Never send, never delete, never touch money.

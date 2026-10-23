@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: not-on-slack
+expected_outcome: |
+  Recommends the Managed Agents API rather than Claude Tag, says someone technical must own set-up, and writes a charter with the space, four people, one agent, Dan as sponsor, a named poster after meetings and start and review dates.
+context:
+  scaffold_script: place-files.sh

@@ -1,0 +1,17 @@
+{
+  "name": "multiplayer-ai-starter",
+  "version": "0.1.1",
+  "description": "Builds a system that knows what is going on in a business and keeps every person informed: progress, actions, next steps. Moves a team from people using AI on their own to a shared agent: diagnose, readiness check, then a 30-day pilot with a roster, north star, a first visible briefing, rubrics, trust built per task and a weekly retro. People decide; it informs. Based on Anthropic Academy guidance.",
+  "author": {
+    "name": "IgniteAI Solutions"
+  },
+  "keywords": [
+    "multiplayer",
+    "agents",
+    "team",
+    "pilot",
+    "claude-tag",
+    "managed-agents",
+    "adoption"
+  ]
+}

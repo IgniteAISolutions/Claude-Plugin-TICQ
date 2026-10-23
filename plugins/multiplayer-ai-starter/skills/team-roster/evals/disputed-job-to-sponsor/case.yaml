@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: disputed-job-to-sponsor
+expected_outcome: |
+  Drafts the jobs list from the channel export and pilot file, labels it a draft, records both claims on the supplier report and sends the dispute to Nia, and leaves no other job with two leads or none.
+context:
+  scaffold_script: place-files.sh

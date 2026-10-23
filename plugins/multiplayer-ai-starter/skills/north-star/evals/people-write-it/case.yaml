@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: people-write-it
+expected_outcome: |
+  Explains that people write the north star, offers prompts, and says how their draft will be tested (ambitious, a baseline and a target, grounded in purpose) rather than writing it.
+context:
+  scaffold_script: place-files.sh
