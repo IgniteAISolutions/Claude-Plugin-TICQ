@@ -1,5 +1,5 @@
 {
-  "description": "Refuses a general-purpose sub-agent sent without its model set. The sub-agent skill carries the same rule for surfaces where hooks do not run.",
+  "description": "Two guards. One refuses a general-purpose sub-agent sent without its model set. One refuses a write into a public knowledge base folder that has not crossed the release gate. The skills carry the same rules for surfaces where hooks do not run.",
   "hooks": {
     "PreToolUse": [
       {
@@ -8,6 +8,16 @@
           {
             "type": "command",
             "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/sub-agent-model.js\"",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/release-gate.js\"",
             "timeout": 10
           }
         ]

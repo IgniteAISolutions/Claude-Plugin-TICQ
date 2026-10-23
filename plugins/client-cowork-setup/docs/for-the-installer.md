@@ -1,12 +1,14 @@
-# {{CLIENT_SLUG}}-cowork-setup 0.2.0, notes for the installer
+# {{CLIENT_SLUG}}-cowork-setup 0.3.0, notes for the installer
 
 Built from the client template repository, where `TEMPLATE.md` at the root sets it up
 for a new client. The user guide for the person at the seat is the plugin's `README.md`,
 with a printable copy at `docs/Cowork-User-Guide_v0.2.0.docx`. `/guide` hands it to them.
+The Word copy predates the knowledge base; `docs/knowledge-base-guide.md` covers it until
+the Word guide is reissued.
 This file is for whoever installs, packs or extends the plugin.
 
 A Claude Cowork build for a client team, built for the Claude 5 models. Installs as
-one plugin of sixteen skills and one hook. Runs day one so the person is amazed before lunch and working by the end
+one plugin of twenty-four skills, one agent and two hooks. Runs day one so the person is amazed before lunch and working by the end
 of the week, and keeps the system improving after the facilitator leaves.
 
 ## What this build does
@@ -34,6 +36,15 @@ of the week, and keeps the system improving after the facilitator leaves.
   goes to the criteria, a missing step to the procedure, an odd input to the edge
   cases, wrong tone to the example. The frame is
   `skills/digital-twin/references/skill-spec.md`.
+- **The knowledge base, Ember, built in place.** Once the acceptance bar is walked at
+  step 10, `/build` rolls into `/ember-setup` at step 11. The working folder becomes the
+  Obsidian vault, each README a folder card, and a link map of twelve kinds says what
+  must link to what. Governance first: the client's own AI policy, DPIA or rule pack is
+  read before any page, stricter wins, connectors are set read-only in the tool where it
+  allows. Models recommended per job. The weekly and monthly runs land before the
+  owner's own review. Client material reaches case studies, marketing or content only
+  through `/release`: anonymised unless captured consent covers the use, the owner's yes,
+  a record. The contract every Ember skill follows is `references/ember-contract.md`.
 - **Claude 5.** Model names corrected throughout. Every skill names its recommended
   effort in its frontmatter and says why. Choose effort first, model second.
 
@@ -42,7 +53,7 @@ of the week, and keeps the system improving after the facilitator leaves.
 | Command | Skill | Effort | What it does |
 |---|---|---|---|
 | `/interview` | cowork-interview | high | Business interview once per firm, role interview per seat, before the day |
-| `/build` | cowork-build | high | Day one, ten steps, each verified. The runsheet is `skills/cowork-build/references/sequence.md` |
+| `/build` | cowork-build | high | Day one, twelve steps, each verified; step 10 is the check, step 11 the knowledge base. The runsheet is `skills/cowork-build/references/sequence.md` |
 | `/structure` | workspace-structure | high, low to apply | Audit, propose, apply on a yes |
 | `/settings` | settings-pass | low | Every setting decided and recorded |
 | `/twin` | digital-twin | high | One task into one tested skill, by interview |
@@ -57,6 +68,17 @@ of the week, and keeps the system improving after the facilitator leaves.
 | `/followup` | cowork-meeting-followup | medium | Transcript to actions, decisions, draft |
 | `/draft` | cowork-draft-in-my-voice | high | Writes in the person's voice, every fact sourced or marked NOT VERIFIED |
 | `/sub-agent` | sub-agent | high | Splits a wide job across sub-agents on lighter models, checks every result |
+| `/ember-setup` | ember-setup | high | Builds the knowledge base in place, once per firm; a short path for later seats |
+| `/capture` | capture | medium | Files one source as it arrived, with a hash |
+| `/compile` | compile | high | Sources into pages and links; shows the files, verifies, applies once |
+| `/ask` | ask | medium | Answers with a citation per claim, or "I don't know" |
+| `/ember-review` | ember-review | medium | The owner's weekly yes, no or replace |
+| `/lint` | lint | low; `--monthly` and `--quarterly` on Sonnet 5.5 | Structure, links, leaks; monthly hygiene, four numbers and the lean check |
+| `/refresh` | refresh | medium | The weekly pull from folders and linked tools |
+| `/release` | release | high | The only route from client material to anything public |
+
+The `verifier` agent in `agents/` is read-only. `/compile`, `/ember-review` and `/release`
+call it with file paths before they apply. Model per job is in `references/models.md`.
 
 ## The structure it builds
 
@@ -68,7 +90,8 @@ of the week, and keeps the system improving after the facilitator leaves.
 ├── Projects/        one folder per party with an engagement
 ├── Library/         knowledge base, templates, reference
 ├── Skills/
-├── System/          scheduled tasks, reviews, settings record
+├── System/          scheduled tasks, reviews, settings record; Ember/ holds the
+│                    knowledge base's map, log, index, reviews and release register
 └── _archive/        retired, never deleted
 ```
 
@@ -78,8 +101,9 @@ routing test. Folders are named for subjects, never for stages.
 ## Order of use, for a new firm
 
 1. `/interview`, business once, role per seat, before the day.
-2. `/build`, one seat at a time. It calls `/structure`, `/settings`, `/twin` and `/end`
-   in sequence.
+2. `/build`, one seat at a time. It calls `/structure`, `/settings`, `/twin`, then walks
+   the acceptance bar, runs `/ember-setup` (the full interview on the owner's seat, the
+   short path on later seats) and closes with `/end`.
 3. Day two to five: fire the skill, second skill, one scheduled task, then `/audit` on
    Friday proposes what to build next.
 4. `/health` at day 30.
@@ -97,9 +121,13 @@ Drafts never send. Money is read only. Nothing client-facing moves without a per
 Nothing is deleted; retired files go to `_archive`. A run that reads the inbox never
 also sends in that run.
 
-## The hook
+## The hooks
 
-`hooks/hooks.json` runs `hooks/sub-agent-model.js` before every sub-agent is sent. It
+`hooks/hooks.json` runs two guards. Both need `node` on the path and fail open.
+
+### The sub-agent model
+
+`hooks/sub-agent-model.js` runs before every sub-agent is sent. It
 refuses a general-purpose sub-agent that has no model set, so legwork never runs at full
 weight by default. Named agent types set their own model and are left alone. It needs
 `node` on the path and fails open: bad input, a missing field or a missing `node` lets the
@@ -111,10 +139,29 @@ Cowork loads plugin hooks and never runs them. Where it does not run, the sub-ag
 carries the same rule inline. Test it on a live Cowork seat and write the result here
 with the date.
 
+### The release gate
+
+`hooks/release-gate.js` runs before every Write, Edit and MultiEdit. Inside a knowledge
+base (a folder with `System/Ember/` above the file), where the nearest folder card says
+`zone: public`, it refuses a file that would carry no `released:` id, an id with no
+record in `System/Ember/releases.md`, a record naming a different file, a withdrawn id,
+or a change to released wording under an old id. The review stamps may still change.
+Folder cards are let through. It cannot see a copy or move from the shell, or a file
+dragged in by hand; the weekly `/lint` leak check (C2) catches those.
+
+Tested with node 22 on 23-10-2026 against seventeen cases, outside any Claude surface:
+every refusal and every allow behaved as specified. **Not verified on Claude Code or
+Cowork.** The same question as above applies: on a surface that does not run plugin
+hooks, `/release` and `/lint` are the only controls, and `/health` (check 8f) says so.
+Test it on a live seat and write the result here with the date.
+
 ## Scheduled tasks
 
-Seven, all local, staged by a person on the build day. The table of what runs when,
-where, and what it produces is `skills/cowork-build/references/schedules.md`. A
+Seven per seat, all local, staged by a person on the build day, in
+`skills/cowork-build/references/schedules.md`. Two more once per firm for the knowledge
+base, staged at step 11 to land before the owner's own weekly review, in the cloud only
+where the storage passed the rewrite test from a scheduled-style run:
+`references/ember-schedules.md`. A
 plugin cannot create a scheduled task on install; never write as if it can.
 
 ## Volatile facts

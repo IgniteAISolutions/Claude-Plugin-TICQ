@@ -116,7 +116,7 @@ Illustrative, an excerpt in the memo's shape. The first real MOT on this seat re
 > **Worst finding.** `CLAUDE.md` line 31: "Never send. <name> sends." `MEMORY.md` line 88, dated
 > 14-07-2026: "Priya can send the Friday supplier chase herself." Both live. Fix 3.
 > **Fix list.** 1. The voice profile named at `CLAUDE.md` line 61 sits in `About Me/`, not
-> `About Me/`. Pointer corrected. Safe, applied. 2. `MEMORY.md` lines 140 and 402 carry the same
+> `System/`. Pointer corrected. Safe, applied. 2. `MEMORY.md` lines 140 and 402 carry the same
 > fact. 140 removed, 402 kept as the later. Safe, applied. 3. The send contradiction above, and
 > `[PATH TO company-context.md]` still in brackets at line 23. Both need a yes from <owner>.
 > **Loop.** Nine reviews. Seven lessons routed, six landed; the seventh named

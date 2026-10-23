@@ -144,13 +144,12 @@ makes updates trackable across a team.
 | Fact | Why it is open |
 |---|---|
 | Usage ratio for a Cowork session against a standard chat | Carried as roughly 20x in older material, never confirmed, and absent from the Academy corpus |
-| Team sharing of Projects | Written when Cowork Projects were local-only. Needs re-reasoning rather than a word swap. Chris to decide |
+| Team sharing of Projects | Written when Cowork Projects were local-only. Needs re-reasoning rather than a word swap. IgniteAI to decide |
 | Screens and buttons | Deliberately empty. Click paths move faster than anything else here, and a stale one loses a room. Fill this in on the morning of a build, from the screen |
 
 ## Licence note
 
 The Academy corpus is Anthropic's copyrighted courseware. Teaching their frameworks is
 one thing and reproducing their lesson prose inside a commercial deliverable is another.
-Everything above is paraphrased for that reason. Before this plugin ships to a paying
-client, confirm the position under the Partner Network agreement. The same question
-applies to the carried voice interview, which derives from a named third party.
+Everything above is paraphrased for that reason, and none of the lesson prose is
+reproduced.

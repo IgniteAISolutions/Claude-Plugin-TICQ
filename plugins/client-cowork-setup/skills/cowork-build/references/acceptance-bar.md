@@ -36,6 +36,9 @@ handover rather than the setup.
 - [ ] **At least one shared scheduled task has fired** on its rhythm and written where
       the team can see it.
 - [ ] **The knowledge base holds real client material**, not a placeholder structure.
+      Decided at step 11 by `/ember-setup`: a client folder card and at least one compiled
+      page with a real source, both paths named. Every other box is walked at step 10,
+      before the knowledge base is built.
 - [ ] **The firewall is written team-wide**, covering send, money and publish, with the
       role variations named.
 - [ ] **A named daily review batch with a target time.** "The review batch runs at 16:00

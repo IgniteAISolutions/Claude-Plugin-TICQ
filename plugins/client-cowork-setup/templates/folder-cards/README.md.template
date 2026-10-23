@@ -1,0 +1,45 @@
+---
+folder: [FOLDER PATH]
+purpose: [WHAT THIS FOLDER IS FOR, ONE SENTENCE]
+belongs: [WHAT GOES IN HERE]
+does-not-belong: [WHAT LOOKS AS IF IT BELONGS BUT LIVES ELSEWHERE, AND WHERE]
+routing-test: [A QUESTION ABOUT A FACT THAT DECIDES WHETHER A FILE GOES HERE]
+version: [VERSION]
+type: folder
+owner: [NAMED PERSON]
+sensitivity: [internal | leadership | confidential]
+zone: [private | public]
+updated: [YYYY-MM-DD]
+review_after: [YYYY-MM-DD]
+links:
+  - "[[PATH/TO/RELATED/README|NAME]]"
+---
+# [FOLDER NAME]
+
+[PURPOSE, ONE SENTENCE]
+
+**Belongs here.** [WHAT GOES IN HERE]
+
+**Does not belong here.** [WHAT LIVES ELSEWHERE, WITH A LINK TO WHERE]
+
+**Routing test.** [THE QUESTION]
+
+## What is in here
+
+| Item | What it is | Owner | Date | Trust |
+|---|---|---|---|---|
+| [[ITEM]] | [ONE LINE] | [NAME] | [YYYY-MM-DD] | [verified, unreviewed, source, original or folder] |
+
+## Not in here
+
+- [THING THAT LOOKS AS IF IT BELONGS]: lives in [[PATH/TO/README|WHERE]].
+
+## Last changed
+
+- [DD/MM/YYYY]: [ITEM] [WHAT CHANGED] ([RUN OR PERSON])
+
+## Links and relationships
+
+- [[PATH/TO/RELATED/README|NAME]]: [WHY THE TWO ARE RELATED]
+
+This file describes the folder and never accumulates facts. Facts live on the pages it lists.

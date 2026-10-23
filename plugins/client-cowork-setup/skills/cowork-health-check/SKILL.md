@@ -11,7 +11,7 @@ effort: high
 
 A setup that looks right and is not right costs more than one that is obviously broken, because it never gets investigated. Seven weeks into one build, a whole-company session was still being spent on wrong folder paths, cloud mode left on, and connectors switched on at admin level and never authorised by the person. Every check below exists because it was earned.
 
-Run it on an install that already exists, or as step 9 inside `/build`. `/health` tests the wiring and `/mot` tests the thinking, and on day 1 of the month the local scheduled task runs both, this one first.
+Run it on an install that already exists, or at the day-30 review after `/build`. `/health` tests the wiring and `/mot` tests the thinking, and on day 1 of the month the local scheduled task runs both, this one first.
 
 ### Model and effort
 
@@ -56,7 +56,7 @@ Then **resolve every file path the document names**. A rule that points at a fil
 
 **7. Check memory carries.** Write a fact, start a fresh session, ask for it back. Memory that was never wired is invisible until somebody notices Claude has forgotten a client for the third time.
 
-**8. The contradiction sweep.** Steps 1 to 7 test whether things work. This one tests whether the documents agree with the machine, and it is where the findings people cannot see themselves come from. Four checks, all mechanical, all in `references/check-matrix.md`: pointers that resolve, controls that cover every route the rules name, conventions stated once rather than twice, and memory's claims about the schedule matching the schedule.
+**8. The contradiction sweep.** Steps 1 to 7 test whether things work. This one tests whether the documents agree with the machine, and it is where the findings people cannot see themselves come from. Four checks, all mechanical, all in `references/check-matrix.md`: pointers that resolve, controls that cover every route the rules name, conventions stated once rather than twice, and memory's claims about the schedule matching the schedule. Two more in the same file: backups piling up (8e) and, where `System/Ember/` exists, whether the knowledge base is being kept (8f).
 
 Every one of these was earned on the first live run of this skill, against the setup of the person who wrote it. A setup built by somebody careful still had all four.
 

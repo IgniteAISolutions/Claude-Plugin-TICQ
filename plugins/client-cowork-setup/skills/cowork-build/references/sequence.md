@@ -1,7 +1,10 @@
 # The build sequence
 
-Ten steps, dependency ordered, each one ending by proving it took. Minute bands are a
-guide to pace for one seat, not a stopwatch. Total about 150 minutes of working time.
+Twelve steps, dependency ordered, each one ending by proving it took. Minute bands are a
+guide to pace for one seat, not a stopwatch. Steps 1 to 10 are about 150 minutes of
+working time; the knowledge base at step 11 adds 60 to 90 more, so a first seat books
+the day, and a later seat in the same firm is shorter, because the knowledge base is
+built once per firm.
 
 ## The pre-work gate, before step 1
 
@@ -81,11 +84,14 @@ screen, decided against the firewall, recorded with a reason. Permission mode fi
 ## Step 7, connectors and the firewall (105 to 120 min)
 
 Two gates: an admin enabled the connector; the person authorises their own. One live
-read per connector. Then the firewall in their own words from the decision-rights
+read per connector, and one line per connector appended to `System/settings-record.md`:
+the connector, the date, what the live read returned, and whether it holds write or send
+permission. `/ember-setup` reads these lines at step 11. Then the firewall in their own words from the decision-rights
 block of the business interview: drafts never send, money is read only, nothing
 client-facing moves without a person, nothing is deleted.
 
-**Verify:** ask what happens when Claude finishes an email. If the answer is anything
+**Verify:** `System/settings-record.md` read back with a line per connector. Then ask
+what happens when Claude finishes an email. If the answer is anything
 other than "it waits for me", the rule has not landed.
 
 ## Step 8, the first skill (120 to 140 min)
@@ -115,16 +121,54 @@ week one, by when, who is checking. Put the dates in the calendar, not a documen
 **Verify:** watch one scheduled task fire and read its output. Calendar entries exist
 with the person's name in the title.
 
-## Step 10, close (150 min)
+## Step 10, the check (150 min)
 
-Run /end. It scores the session, scans the day's outputs for voice drift, and shows
-the person the review. Then walk `acceptance-bar.md`. Binary. Never call it live
-early.
+Walk `acceptance-bar.md` with the person, box by box. Binary. Every box is decided here
+except the team-wide line "The knowledge base holds real client material", which step 11
+decides. Write the walk to `System/Reviews/<date>-acceptance.md`: one line per box,
+ticked with its evidence, or open with what it needs and who owns it.
+
+If any box other than the knowledge base line is open, stop here. Fix it, or close the
+day with `/end` and name the box. The knowledge base is never built on a seat that has
+not passed the check, because every later run inherits what the build left.
+
+**Verify:** the acceptance file read back, every box but one decided, and the person
+agrees with each line.
+
+## Step 11, the knowledge base (150 to 240 min)
+
+Run `/ember-setup`. It turns the working folder the build just made into the business's
+knowledge base, in place: governance first, then the business, the model per job, the
+link map, the build plan, the folder cards, Obsidian, and the weekly and monthly runs.
+The interview is one question at a time and is in `skills/ember-setup/references/interview.md`.
+
+Once per firm, on the owner's seat. A later seat in the same firm skips the interview:
+`/ember-setup` reads `System/Ember/map.md` from the shared folder, checks the seat can
+read and rewrite it, and adds the seat's name under Sensitivity at the level the owner
+gives.
+
+If the day has run long, stop at the end of any `/ember-setup` stage. It resumes from the
+first stage whose proof fails, in a second session inside the same week. The acceptance
+line stays open until it finishes, and the build is not live until then.
+
+**Verify:** the setup review in `System/Ember/reviews/` read back, with the knowledge base
+line ticked against two paths (a client folder card and a compiled page with a real
+source), or the line left open with what it needs.
+
+## Step 12, close
+
+Run /end. It scores the session, scans the day's outputs for voice drift, and shows the
+person the review. Update `System/Reviews/<date>-acceptance.md` with the knowledge base
+line from step 11. Never call it live early: live means every box is true.
+
+**Verify:** the `/end` review and the acceptance file read back; every box ticked, or the
+open one named with its owner and date.
 
 ## The week that follows
 
 Day two: fire the skill on a new instance, one gap, one rule. Day three: second task,
 second skill, the person runs the interview. Day four: one more connector and one
-scheduled task that produces something overnight. Day five: `/audit` runs on Friday
+scheduled task that produces something overnight, and one `/capture` of a real document
+into the knowledge base, followed by `/ask` against it. Day five: `/audit` runs on Friday
 and proposes what to build next, this plugin's own `/audit`, never another plugin's.
 That is the moment it stops feeling like a tool.

@@ -1,0 +1,11 @@
+{
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "useMarkdownLinks": false,
+  "newLinkFormat": "absolute",
+  "showFrontmatter": true,
+  "propertiesInDocument": "visible",
+  "strictLineBreaks": false,
+  "readableLineLength": true,
+  "userIgnoreFilters": ["_archive/", "Skills/", "System/", "About Me/"]
+}

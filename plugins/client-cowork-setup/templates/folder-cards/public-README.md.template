@@ -1,0 +1,45 @@
+---
+folder: [FOLDER PATH]
+purpose: [WHAT IS PUBLISHED FROM HERE]
+belongs: Material released through /release, each file carrying its release record id.
+does-not-belong: Anything not released through /release. Drafts that name a client without recorded consent. Any link to a private page.
+routing-test: Has this been released through /release, with a record in System/Ember/releases.md? If not, it does not go here.
+version: [VERSION]
+type: folder
+owner: [NAMED PERSON]
+sensitivity: internal
+zone: public
+updated: [YYYY-MM-DD]
+review_after: [YYYY-MM-DD]
+links:
+  - "[[PATH/TO/OFFER|OFFER IT SHOWS]]"
+---
+# [FOLDER NAME]
+
+[WHAT IS PUBLISHED FROM HERE]
+
+**Belongs here.** Material released through `/release`, each file carrying its release record id.
+
+**Does not belong here.** Anything that has not crossed the release gate. Any link to a private page: this card and everything in this folder link only to other public pages and to offers.
+
+**Routing test.** Has this been released through `/release`, with a record in `System/Ember/releases.md`? If not, it does not go here.
+
+## What is in here
+
+| Item | What it is | Owner | Date | Release |
+|---|---|---|---|---|
+| [[ITEM]] | [ONE LINE] | [NAME] | [YYYY-MM-DD] | [R-YYYY-NNN] |
+
+## Not in here
+
+- The client material these were drawn from: it stays in the client's own folder, private.
+
+## Last changed
+
+- [DD/MM/YYYY]: [ITEM] released ([R-YYYY-NNN])
+
+## Links and relationships
+
+- [[PATH/TO/OFFER|OFFER IT SHOWS]]: [WHY]
+
+This file describes the folder and never accumulates facts. Facts live on the pages it lists.

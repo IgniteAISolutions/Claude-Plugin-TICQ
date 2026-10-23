@@ -1,7 +1,7 @@
 ---
 name: settings-pass
 description: |
-  Walks every Cowork setting with the person and leaves each one deliberately on or off, with the reason written down. Permission mode, model and effort, connectors and how often each asks, web access, scheduled-task mode, memory, usage limits, the working folder, the writing-voice setting. Reads the current value off the person's own screen rather than reciting it, decides it against the workspace's firewall, and records the decision in System/settings-record.md so a later health check can tell drift from choice. Triggers on "/settings", "settings pass", "go through my settings", "what should be on", "set up my permissions", or as step 3 of /build. Never changes an admin-level setting; names it for the admin instead.
+  Walks every Cowork setting with the person and leaves each one deliberately on or off, with the reason written down. Permission mode, model and effort, connectors and how often each asks, web access, scheduled-task mode, memory, usage limits, the working folder, the writing-voice setting. Reads the current value off the person's own screen rather than reciting it, decides it against the workspace's firewall, and records the decision in System/settings-record.md so a later health check can tell drift from choice. Triggers on "/settings", "settings pass", "go through my settings", "what should be on", "set up my permissions", or as step 6 of /build. Never changes an admin-level setting; names it for the admin instead.
 effort: low
 ---
 

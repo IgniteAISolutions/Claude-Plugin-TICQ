@@ -1,0 +1,14 @@
+---
+type: questions
+owner: "[NAMED PERSON]"
+updated: [YYYY-MM-DD]
+---
+# The twenty questions
+
+The questions [COMPANY] asks most, each with the page that should answer it. Scored each
+quarter: Ember answers each one cold, the answer is checked against the page named, and
+the score is added here and to the regression report. Handover line, agreed with [OWNER] at setup: [AGREED SCORE, DEFAULT 16] of 20.
+
+| # | Question | Should answer from | Scores |
+|---|---|---|---|
+| 1 | [QUESTION] | [[PAGE]] | |

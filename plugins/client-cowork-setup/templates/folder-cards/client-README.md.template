@@ -1,0 +1,47 @@
+---
+folder: Projects/[CLIENT]
+purpose: Everything for the engagement with [CLIENT].
+belongs: Proposals, delivery, correspondence, notes, decisions and sources made for or about [CLIENT].
+does-not-belong: The business's own material. Other clients' work, which lives in their own folder. Anything published about this work, which goes through /release.
+routing-test: Does this name [CLIENT], or was it made for them? If yes it lives here.
+version: [VERSION]
+type: folder
+owner: [NAMED PERSON]
+sensitivity: leadership
+zone: private
+updated: [YYYY-MM-DD]
+review_after: [YYYY-MM-DD]
+links:
+  - "[[PATH/TO/OFFER|OFFER BOUGHT]]"
+consent: none
+---
+# [CLIENT]
+
+Everything for the engagement with [CLIENT].
+
+**Belongs here.** Proposals, delivery, correspondence, notes, decisions and sources made for or about [CLIENT].
+
+**Does not belong here.** The business's own material. Other clients' work. Anything published about this work, which goes through `/release` and never links back here.
+
+**Routing test.** Does this name [CLIENT], or was it made for them? If yes it lives here.
+
+## What is in here
+
+| Item | What it is | Owner | Date | Trust |
+|---|---|---|---|---|
+| [[CLIENT-SLUG]] | The company page: who they are, who we deal with, what is open | [NAME] | [YYYY-MM-DD] | [TRUST] |
+
+## Not in here
+
+- [CLIENT]'s invoices and payments: they live in ~~accounting, and figures are never copied here.
+- Anything published about this work: it goes through `/release`, anonymised unless the consent above covers the use.
+
+## Last changed
+
+- [DD/MM/YYYY]: [ITEM] [WHAT CHANGED] ([RUN OR PERSON])
+
+## Links and relationships
+
+- [[PATH/TO/OFFER|OFFER BOUGHT]]: [CLIENT] buys this; its price comes from there.
+
+This file describes the folder and never accumulates facts. Facts live on the pages it lists.

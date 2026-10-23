@@ -1,0 +1,115 @@
+---
+type: map
+owner: "[NAMED PERSON]"
+updated: [YYYY-MM-DD]
+---
+# [COMPANY]: the map
+
+Read first by every Ember skill. Under 200 lines. Changed only with [OWNER]'s yes.
+
+## The business
+
+[ONE PARAGRAPH, IN THE OWNER'S WORDS: WHAT THE BUSINESS DOES, FOR WHOM, HOW IT MAKES MONEY]
+
+**This year.** [THE THREE PRIORITIES]
+
+**Owner of the knowledge base.** [NAME]. Answers the weekly review.
+
+**Leadership.** [NAMED PEOPLE WHO MAY READ leadership PAGES]
+
+## The rhythm
+
+How [OWNER] already looks back and plans ahead, in their words: [ANSWER].
+
+- **Weekly review:** [DAY], by [TIME]. The weekly run lands an hour before it.
+- **Monthly sit-down:** [DAY OR "none kept"]. The monthly run lands the working day before it, or on the first weekday of the month.
+
+## The source order
+
+When two sources disagree, the higher one wins. A kind of fact owned by a live system is
+always read there; the vault holds a dated copy at most.
+
+| Kind of fact | Owned by | The vault holds |
+|---|---|---|
+| Money: balances, invoices, payments | ~~accounting ([TOOL OR none]) | Rules and pointers only, never figures |
+| Customers and contacts | ~~CRM ([TOOL OR none]) | Person and company pages, checked monthly |
+| Dates and meetings | ~~calendar ([TOOL OR none]) | Nothing; dates are read live |
+| Documents | ~~file storage ([TOOL]) | The originals, in place |
+| How we work, what we decided | the vault | Knowledge and decision pages |
+
+Then, among vault pages: verified beats unreviewed; newer verified beats older; a decision
+beats a page it changed.
+
+## The ten rules, as [COMPANY] applies them
+
+1. Newest verified wins. A page past its review date is never the source for a number that leaves.
+2. Conflicts follow the source order above; say which won and log it.
+3. Say "I don't know", and offer the way to find it.
+4. Never turn a guess into company knowledge. Every page has a source.
+5. Supersede, never overwrite a fact.
+6. Deletion is a human act.
+7. A new knowledge page needs two independent sources, or one decision it changes.
+8. Show the files to be changed, then apply once.
+9. Sources are never edited.
+10. Private stays private. Confidential pages go to [OWNER] only. Nothing crosses to a public folder except through `/release`.
+
+[ANY RULE THE BUSINESS ADDED, NUMBERED FROM 11]
+
+## The link map
+
+Agreed with [OWNER] on [DD/MM/YYYY].
+
+| Kind | Folder | Colour |
+|---|---|---|
+| [KIND] | [[PATH/TO/README\|FOLDER]] | [COLOUR] |
+
+Required links: L1 to L12 from the plugin's `link-map.md`, except [ANY DROPPED, WITH WHY]. Added: [ANY ADDED].
+
+Public folders: [[PATH/TO/README\|FOLDER]].
+
+## Key pages
+
+| Role | Page |
+|---|---|
+| Pricing (L4) | [[PATH/TO/PRICING]] |
+| Who may see what (L9) | [[PATH/TO/ai-use]] |
+| What never goes in | [[PATH/TO/what-never-goes-in]] |
+
+## Auto-capture
+
+What the weekly refresh may capture with nobody present. Everything else is proposed in the
+refresh report and captured only on a yes. Email is never on this list.
+
+- [E.G. TRANSCRIPTS SAVED INTO A CLIENT FOLDER FROM ~~meeting notes]
+
+## Retention
+
+| Kind of page | Kept for | Then |
+|---|---|---|
+| [FROM THE CLIENT'S DPIA OR POLICY, OR "not set"] | [PERIOD] | proposed for _archive/ by /lint --monthly |
+
+## Publishing
+
+What the business's own governance says about publishing or referring to clients, quoted
+with its source, for `/release`. Stricter than consent wherever they differ.
+
+- [RULE, WITH ITS SOURCE DOCUMENT, OR "none found: the release gate's default applies"]
+
+## Sensitivity
+
+[FROM THE GOVERNANCE BRIDGE: EACH DATA CATEGORY AND ITS SENSITIVITY]
+
+Plan and data-use setting, as read off the screen on [DD/MM/YYYY]: [ANSWER].
+
+## Models, per job
+
+| Job | Model and effort | Why |
+|---|---|---|
+| /compile | [MODEL, EFFORT] | [WHY] |
+
+## The schedules
+
+| Task | When | Where it runs | Why there |
+|---|---|---|---|
+| Ember weekly | [REVIEW DAY], [TIME] | [cloud or desktop] | [REASON] |
+| Ember monthly | [MONTHLY DAY], 09:00 | [cloud or desktop] | [REASON] |

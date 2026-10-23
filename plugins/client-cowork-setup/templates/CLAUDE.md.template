@@ -113,7 +113,9 @@ read only or off limits. Be explicit about anything that must never be touched.]
 Seven scheduled tasks keep this seat running: the brief, triage, the Monday nudge,
 the weekly flywheel, the filing sweep, the monthly MOT and the backup. All seven are
 local: each reads or writes this folder, so the machine has to be awake with Cowork
-open. The full list, with times and what each produces, is at `System/Scheduled/`.
+open. Their times are set on the build day and recorded in the scheduler; `/health`
+lists them. Where the business has a knowledge base, two more run for it once per firm,
+on the owner's seat, as `System/Ember/map.md` "The schedules" records.
 
 ## 11. Memory
 

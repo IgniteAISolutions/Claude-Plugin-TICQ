@@ -8,11 +8,12 @@ version from here rather than waiting for a zip by email.
 
 | Plugin | Version | What it does |
 |---|---|---|
-| `{{CLIENT_SLUG}}-cowork-setup` | 0.2.0 | Sets a seat up on Claude Cowork and keeps it improving: `/build`, `/twin`, `/guide`, `/end`, `/audit`, `/health`, `/mot` and the five starter skills. Drafts only, never sends. |
+| `{{CLIENT_SLUG}}-cowork-setup` | 0.3.0 | Sets a seat up on Claude Cowork and keeps it improving: `/build`, `/twin`, `/guide`, `/end`, `/audit`, `/health`, `/mot` and the five starter skills. Then builds the business's knowledge base in place with `/ember-setup`: governed, linked by section, refreshed weekly, client material anonymised through `/release` before it goes public. Drafts only, never sends. |
 | `multiplayer-ai-starter` | 0.1.1 | Optional. A system that knows what is going on in the business and keeps every person informed: progress, actions, next steps. Moves a team from people using AI on their own to agents working as shared teammates: find the repeats, tool or teammate, a readiness check, then a 30-day pilot with a roster, a north star, a first visible job, rubrics, a trust ladder and a weekly retro. Advises, never enforces. |
 
 The user guide for the person at the seat is `plugins/{{CLIENT_SLUG}}-cowork-setup/README.md`,
-with a printable copy in `plugins/{{CLIENT_SLUG}}-cowork-setup/docs/`.
+with a printable copy in `plugins/{{CLIENT_SLUG}}-cowork-setup/docs/`. The knowledge base has
+its own guide, `plugins/{{CLIENT_SLUG}}-cowork-setup/docs/knowledge-base-guide.md`.
 
 ## Installing
 

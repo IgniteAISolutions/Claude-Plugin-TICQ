@@ -1,0 +1,20 @@
+---
+type: connections
+updated: [YYYY-MM-DD]
+---
+# Connections
+
+| Slot | Tool | Linked on | Proven by | Ember may | Set in the tool | Notes |
+|---|---|---|---|---|---|---|
+| ~~file storage | [TOOL] | [YYYY-MM-DD] | [REWRITE TEST, FROM WHERE] | read, write | [WRITE SCOPED TO THE WORKING FOLDER, OR WHY NOT] | |
+| ~~email | [TOOL OR none] | | | read | [read-only, OR read-write AND WHY, OR cannot be restricted] | |
+| ~~calendar | [TOOL OR none] | | | read | [AS ABOVE] | |
+| ~~meeting notes | [TOOL OR none] | | | read | [AS ABOVE] | |
+| ~~accounting | [TOOL OR none] | | | read | [AS ABOVE] | |
+| ~~CRM | [TOOL OR none] | | | read | [AS ABOVE] | |
+
+"Ember may" is the rule. "Set in the tool" is the control: what the connector's own
+permissions allow, read off the screen at setup. Where the two differ, the setup review
+names it as a risk.
+
+Scheduled runs: [cloud | desktop], because [THE REWRITE TEST RESULT FROM A CLOUD RUN].

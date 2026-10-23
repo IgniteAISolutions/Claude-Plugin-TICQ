@@ -118,6 +118,22 @@ List `_archive/backups`. Where it holds more than eight zips, say how many and t
 date, and leave them. The backup task never deletes, and neither does this check; the
 person clears old ones by hand if they want the space back.
 
+### 8f. The knowledge base is being kept
+
+Only where `System/Ember/` exists. Five checks, each by reading a file or the scheduler:
+
+- Both Ember tasks are in the scheduler, and where each runs (cloud or desktop) matches
+  the "Scheduled runs" line in `System/Ember/connections.md`.
+- The newest `System/Ember/reviews/*-refresh.md` is under eight days old, and the newest
+  `*-hygiene.md` under five weeks. A task that ran and wrote nothing is reported as the
+  silent failure, never as a pass.
+- The newest hygiene report carries the four numbers and the lean check.
+- No file in a folder at `zone: public` lacks a `released:` id that appears in
+  `System/Ember/releases.md`. Any that does is the first finding of the report.
+- The release hook: say whether `hooks/release-gate.js` fired on this surface, from the
+  test result recorded in `docs/for-the-installer.md`. Where it is not verified, the
+  weekly `/lint` leak check is the only control, and the report says so.
+
 ## The weekly review, created as a local task
 
 Where step 8 finds no weekly review, stage the Weekly flywheel from

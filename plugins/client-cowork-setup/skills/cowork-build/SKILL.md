@@ -1,7 +1,7 @@
 ---
 name: cowork-build
 description: |
-  Runs day one for one seat, from a folder Claude has never seen to a working system the person has already used, and proves every step took. Opens by reading their real folder and producing something useful in the first twenty minutes, then does one live task they brought, then introduces each piece of setup as the repair for a failure they just watched: folders and descriptors, context files, settings, connectors, the firewall. Builds their first skill from the task they just did with /twin, stages the schedules, sets the target list, closes with /end and walks the acceptance bar. Triggers on "/build", "build day", "set me up", "run the build", "get me started", "new seat". Never sends, never deletes, never touches money. Not the interviews, which are /interview; not the audit, which is /health.
+  Runs day one for one seat, from a folder Claude has never seen to a working system the person has already used, and proves every step took. Opens by reading their real folder and producing something useful in the first twenty minutes, then does one live task they brought, then introduces each piece of setup as the repair for a failure they just watched: folders and descriptors, context files, settings, connectors, the firewall. Builds their first skill from the task they just did with /twin, stages the schedules, sets the target list, walks the acceptance bar, rolls straight into the knowledge base with /ember-setup, then closes with /end. Triggers on "/build", "build day", "set me up", "run the build", "get me started", "new seat". Never sends, never deletes, never touches money. Not the interviews, which are /interview; not the audit, which is /health.
 effort: high
 ---
 
@@ -39,7 +39,7 @@ proving that.
 
 ### How to run it
 
-Read `references/sequence.md` and work the ten steps in order. They are
+Read `references/sequence.md` and work the twelve steps in order. They are
 dependency-ordered, so the order is the method. One step per message. Explain each
 thing in one sentence before you do it, in plain language, and say what a term means
 the first time you use it.
@@ -65,12 +65,14 @@ a half-done build never starts again; starting again is how people abandon wizar
 
 ## Quality criteria
 
-Walk `references/acceptance-bar.md` at the end. Binary. Never call it live early.
+Walk `references/acceptance-bar.md` at step 10, before the knowledge base, and record it.
+Binary. Step 11 decides the knowledge base line; step 12 closes with every box true or the
+open one named. Never call it live early.
 
 ## Example
 
 No completed build day is on record in this plugin yet. `references/sequence.md` is the
-shape of the day, ten steps and about 150 minutes. The first day that runs to
+shape of the day, twelve steps: about 150 minutes, then 60 to 90 for the knowledge base. The first day that runs to
 acceptance on a real seat produces a `/end` review, and that review, with the client's
 identifying details removed, goes here as the example.
 
@@ -84,7 +86,8 @@ identifying details removed, goes here as the example.
   their real calendar and inbox instead, and say why.
 - **Setup overruns.** The win is first, so an overrun costs polish, not the outcome.
   Cut in this order: schedules, then settings beyond the first three, then the target
-  list. Never cut the first skill or the firewall.
+  list. Never cut the first skill or the firewall. The knowledge base is never cut; it
+  moves to a second session in the same week and resumes where it stopped.
 - **The room has ten seats.** Checkpoint every step, hands up when done, the room does
   not move until it is level. Build the shared skills once; each seat layers one
   role-specific skill in their own session.

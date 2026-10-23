@@ -1,14 +1,14 @@
 # Your Cowork, {{CLIENT_NAME}}
 
-**A user guide to the sixteen skills in your Cowork plugin**
+**A user guide to the twenty-four skills in your Cowork plugin**
 
-Version 0.2.0. For the person sitting at the seat. Keep it open beside Cowork for the first fortnight; after that you will not need it. If you are ever unsure what to type, type `/guide`.
+Version 0.3.0. For the person sitting at the seat. Keep it open beside Cowork for the first fortnight; after that you will not need it. If you are ever unsure what to type, type `/guide`.
 
 ---
 
 ## What you have
 
-Claude Cowork is Claude working inside your own folders, with your own email and calendar connected. On its own it is a capable assistant that knows nothing about you. This plugin gives it sixteen skills.
+Claude Cowork is Claude working inside your own folders, with your own email and calendar connected. On its own it is a capable assistant that knows nothing about you. This plugin gives it twenty-four skills: sixteen for your seat, and eight that build and keep the business's knowledge base.
 
 A skill is a set of instructions Claude follows for one job: the morning brief, the inbox, a meeting write-up, a draft in your voice. Each one was written from how people in firms like yours actually do the job, then tuned to you on your first day from your own answers and your own files.
 
@@ -23,6 +23,8 @@ These hold in every skill, on every seat, and nothing you type will change them.
 3. **It never deletes.** Anything retired goes into an `_archive` folder. Nothing is lost.
 4. **Anything a client will see waits for a person.** You.
 
+One more holds for the knowledge base: **nothing about a client reaches anything public except through `/release`**, anonymised unless the client's recorded consent covers it, and only on the owner's yes.
+
 If it ever appears to have broken one of these, tell {{CLIENT_CONTACT}} the same day.
 
 ## Your first day
@@ -32,6 +34,8 @@ The build day runs for about two and a half hours with a facilitator, and it sta
 Three things only you can do on the day. You sign in to each connector yourself, because the login belongs to you. You read each setting off your own screen. And you bring the task.
 
 By the end you will have used it for real, seen it get something wrong, corrected it, and watched it get it right. That last part matters more than anything in this guide.
+
+Once the day's check has passed, the build rolls straight into the knowledge base. On the owner's seat that is about another hour, one question at a time; on every other seat it takes a few minutes. If the day runs long, it carries on in a second session the same week.
 
 ## How to talk to it
 
@@ -213,6 +217,62 @@ When it says **NOT VERIFIED** or **NOT CHECKED**, it is telling you it could not
 
 ---
 
+## Your knowledge base
+
+The knowledge base is your own working folder, the one the build sets up, with everything the business knows written down once, with a source, an owner and a date to check it again. Nothing moves and nothing new sits beside your folders. Each folder's README grows into a card that says what is in it, what is not, and what it links to. You can see it as a map in a free app called Obsidian, where each kind of folder has its own colour and the lines show how clients, offers, decisions and suppliers connect.
+
+Two rules matter most. Nothing becomes company knowledge until the owner says yes to it. And when the answer is not in there, it says "I don't know" and tells you where to find it, instead of guessing.
+
+### /ember-setup, building it
+
+**What it does.** Runs once per business, on the owner's seat, straight after the build day's check. Looks for any rules you already have about AI and personal data first, and follows them wherever they are stricter. Asks what the business does, the rhythm you already keep for reviewing the week, who owns the knowledge base, and which systems hold money, customers, dates and documents. Recommends which model runs each job. Agrees which folder is which kind and what must link to what, writes the cards, opens the map in Obsidian, and sets the weekly and monthly runs to land just before your own review. On every other seat it only checks the seat can reach it and asks the owner what that person may see.
+
+**What to type.** `/ember-setup`, or "set up the knowledge base".
+
+**What it never does.** Guesses an answer: it writes "not yet answered". Writes a page before the rules on personal data are settled.
+
+### /capture and /compile, putting things in
+
+**What they do.** `/capture` files one document, email, transcript or note exactly as it came, in the folder it belongs to, and marks it unreviewed. `/compile` reads what has been captured and turns it into pages: each fact on the one page that holds it, a changed fact kept with its history, and a disagreement between two sources shown as both, never settled by guesswork.
+
+**What to type.** `/capture` with the file or text, or "put this in the knowledge base". `/compile`, or "fold that in".
+
+**What they never do.** Edit the original. File anything on the never list. Mark anything as checked; only the owner does that.
+
+### /ask, getting answers
+
+**What it does.** Answers from the knowledge base with the page behind every claim, how sure it is and how old the page is. Says "I don't know" when it is not there.
+
+**What to type.** `/ask`, or just ask: "what do we charge for", "what did we decide about", "who is".
+
+**What it never does.** Guesses. Uses a page past its check date for a figure that leaves the business.
+
+### /ember-review, ten minutes a week
+
+**What it does.** The weekly list for the owner: new pages, pages due a check, disagreements, questions it could not answer, and anything the monthly check proposes to tidy. One line each. You answer yes, no, or replace with the right fact.
+
+**What to type.** `/ember-review`, or "review the knowledge base".
+
+**What it never does.** Changes a page you have not answered. Deletes.
+
+### /release, case studies, marketing and content
+
+**What it does.** The only route from a client's material to anything public: a case study, a post, a web page, a talk, or work for another client. Removes or blurs everything that could identify them unless their card records consent that covers that exact use, with the email or form that gave it. Shows you the text beside what it removed, and files it in the public folder only on the owner's yes, with a record.
+
+**What to type.** `/release`, or "turn this into a case study", "can I use this in a post".
+
+**What it never does.** Publishes, posts or sends. Takes consent from memory or a chat. Writes into a public folder without a record. A check built into the plugin refuses that too, on the surfaces that run plugin checks, and the weekly `/lint` catches it everywhere else.
+
+### /refresh and /lint, keeping it true
+
+**What they do.** `/refresh` runs weekly on its own: it finds what changed in your folders and connected tools that week, files it, and brings the cards up to date. `/lint` checks the structure every week: broken links, cards out of date, a missing link between a client and what they bought, anything public pointing at something private. Once a month it checks money and customer pages against the systems that own them, and proposes what to cut so the instructions stay lean.
+
+**What to type.** Usually nothing; they run on a schedule. `/lint` or "check the knowledge base" to run it now.
+
+**What they never do.** Change a fact on their own. Delete.
+
+---
+
 ## How your skills are built
 
 Every skill in this plugin, and every skill `/twin` builds for you, has the same five parts in the same order.
@@ -231,7 +291,7 @@ You will never be asked to fill these in. `/twin` asks about your job and the fi
 
 ## What runs on its own
 
-Seven jobs run by themselves, on a schedule, once they are set up on your build day.
+Seven jobs run by themselves on every seat, on a schedule, once they are set up on your build day. Two more run once for the whole business, for the knowledge base.
 
 - **The morning brief**, every day at 07:30: the day ahead and one first move, waiting when you open the laptop.
 - **Inbox triage**, at 08:00 and 14:00: your email sorted into four buckets, with the easy replies drafted.
@@ -240,8 +300,10 @@ Seven jobs run by themselves, on a schedule, once they are set up on your build 
 - **The filing sweep**, Friday at 16:30: a list of anything that landed in the wrong folder this week.
 - **The monthly check-up**, the first of the month at 08:00: a check on the wiring, then a memo on the thinking.
 - **The backup**, Sunday at 20:00: a copy of your rules, memory and skills, zipped and saved.
+- **The knowledge base, weekly**, an hour before the owner's own weekly review: what changed this week filed, the structure checked, and the review list waiting.
+- **The knowledge base, monthly**, the working day before the owner's monthly sit-down: pages checked against the systems that own them, four numbers on its health, and what to cut.
 
-They only run when your laptop is open and Cowork is running: a job that reads your folder needs the machine awake to do it. None of the seven ever sends anything; every one only drafts or writes something for you to read.
+The seven only run when your laptop is open and Cowork is running: a job that reads your folder needs the machine awake to do it. The two knowledge base runs go in the cloud only where the build proved your storage allows it, and otherwise on the owner's laptop. None of the nine ever sends anything; every one only drafts or writes something for you to read.
 
 ## When something goes wrong
 
@@ -256,12 +318,14 @@ They only run when your laptop is open and Cowork is running: a job that reads y
 | It did something I did not ask for | `/end`, and say so. The lesson gets filed against the skill that did it. |
 | A setting seems wrong since an update | `/settings`. |
 | It used a word I would never use | Say so. The word goes on your never list and it stays there. |
+| It said "I don't know" | That is the knowledge base being honest. Give it the answer and say "put that in"; it is captured and comes to the owner's weekly review. |
+| I want to use a client in a post or case study | `/release`. Never copy it across by hand. |
 
 ## The words it uses
 
 **Draft.** Anything written but not sent. Every message it produces is one.
 
-**Skill.** A set of instructions for one job. Sixteen come with the plugin; `/twin` builds more.
+**Skill.** A set of instructions for one job. Twenty-four come with the plugin; `/twin` builds more.
 
 **Connector.** A link to your email, calendar or drive. You sign in to each one yourself.
 
@@ -277,14 +341,20 @@ They only run when your laptop is open and Cowork is running: a job that reads y
 
 **The firewall.** The four rules on the second page.
 
+**Knowledge base.** Your working folder, with what the business knows written down once, each fact with a source, an owner and a date to check it again.
+
+**Folder card.** The README in each folder, saying what is in it, what is not, and what it links to.
+
+**Release.** The one route from a client's material to anything public, anonymised unless recorded consent covers it.
+
 ## Who to ask
 
 {{CLIENT_CONTACT}} is your firm's champion for Cowork, at {{CLIENT_CONTACT_EMAIL}}. Ask them first. For anything they cannot answer, your IgniteAI contact: chris.duffy@igniteaisolutions.co.uk.
 
 ---
 
-*Built for {{CLIENT_NAME}} by IgniteAI Solutions Ltd. Plugin version 0.2.0, October 2026.*
+*Built for {{CLIENT_NAME}} by IgniteAI Solutions Ltd. Plugin version 0.3.0, October 2026.*
 
 ---
 
-*Installing or packing this plugin? The developer notes are in `docs/for-the-installer.md`. A printable copy of this guide is `docs/Cowork-User-Guide_v0.2.0.docx`.*
+*Installing or packing this plugin? The developer notes are in `docs/for-the-installer.md`. A printable copy of this guide is `docs/Cowork-User-Guide_v0.2.0.docx`; it does not yet cover the knowledge base, which is in `docs/knowledge-base-guide.md`.*

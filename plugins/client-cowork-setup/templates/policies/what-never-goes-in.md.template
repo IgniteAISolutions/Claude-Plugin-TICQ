@@ -1,0 +1,40 @@
+---
+type: policy
+title: "What never goes in the knowledge base"
+owner: "[NAMED PERSON]"
+source: "[PATH TO THE SETUP INTERVIEW SOURCE]"
+captured: [YYYY-MM-DD]
+last_verified: [YYYY-MM-DD]
+review_after: [YYYY-MM-DD, 180 DAYS ON]
+trust: unreviewed
+status: current
+sensitivity: internal
+zone: private
+---
+# What never goes in
+
+None of these is ever written into any page, card or source, whatever the business later
+decides. A source that holds one is not captured until a copy without it is supplied.
+
+- Passwords, API keys, tokens or any login.
+- Card numbers, bank account details, sort codes.
+- Government identity numbers, passport or driving-licence details.
+- Health information about any person.
+- Payroll and individual pay.
+- Anything a person gave in confidence and would not expect written down.
+
+Added by [COMPANY]:
+
+- [FROM THE INTERVIEW, AND FROM THE CLIENT'S AI POLICY OR DPIA WHERE ONE EXISTS]
+
+**Applies to.** Every folder in the working tree.
+
+## History
+
+## Connections
+
+- [[ai-use]]: the policy that points here.
+
+## Sources
+
+- [[PATH TO THE SETUP INTERVIEW SOURCE]] (added by [NAME], [YYYY-MM-DD]): the governance answers.

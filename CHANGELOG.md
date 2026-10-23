@@ -1,5 +1,48 @@
 # Changelog
 
+## 0.3.0, 23 October 2026
+
+### Added
+
+- **The knowledge base, Ember, folded into the setup plugin.** Eight skills (`/ember-setup`,
+  `/capture`, `/compile`, `/ask`, `/ember-review`, `/lint`, `/refresh`, `/release`), a
+  read-only `verifier` agent, the contract and references, and the vault, page, card,
+  policy and Obsidian templates. One install. The worked examples use one invented
+  business; no real client appears anywhere. `skills/`, `agents/`, `references/`,
+  `templates/`, `commands/`
+- **`/build` rolls into the knowledge base.** Twelve steps: step 10 walks the acceptance
+  bar, step 11 runs `/ember-setup` once the check has passed, step 12 closes with `/end`.
+  A later seat in the same firm takes a short path instead of the full interview.
+  `skills/cowork-build/references/sequence.md`, `acceptance-bar.md`, `skills/ember-setup/SKILL.md`
+- **A hook that refuses an unreleased write into a public folder.** A file in a
+  `zone: public` folder must carry a release id recorded against that file; released
+  wording changes only through a new release. Fails open. Tested with node against
+  seventeen cases; not verified on Claude Code or Cowork. `hooks/release-gate.js`,
+  `hooks/hooks.json`, `references/release-gate.md`
+- **Runs fitted to the rhythm the owner already keeps.** Setup asks how they already
+  review the week and the month; the weekly run lands an hour before their review and
+  the monthly the working day before their sit-down. Friday 15:00 and the first weekday
+  where they keep none. `skills/ember-setup/references/interview.md`,
+  `references/ember-schedules.md`, `templates/system-ember/map.md.template`
+- **Connectors set read-only in the tool.** Governance asks the person to read each
+  connector's permissions off the screen and sets read-only where the tool allows; file
+  storage keeps write, scoped to the working folder. What could not be restricted is a
+  risk in the setup review. `references/governance-bridge.md`,
+  `templates/system-ember/connections.md.template`
+- **The lean check.** `/lint --monthly` measures Ember's own files and proposes, for old
+  corrections, fold into a rule, turn into a skill candidate, or retire. `/ember-review`
+  takes those and the archive proposals as an eighth source. `skills/lint/references/checks.md`
+  (H6), `skills/ember-review/`
+- **`/health` check 8f**, whether the knowledge base is being kept.
+  `skills/cowork-health-check/references/check-matrix.md`
+- **`docs/knowledge-base-guide.md`**, the guide to the knowledge base for the owner.
+
+### Not done
+
+- The Word guide, `docs/Cowork-User-Guide_v0.2.0.docx`, is not reissued and does not
+  cover the knowledge base.
+- No skill in this release has run on a live seat.
+
 ## multiplayer-ai-starter 0.1.1, 22 October 2026
 
 ### Changed

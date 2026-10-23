@@ -27,7 +27,7 @@ position before this ships to a paying client.
 Your entire "voice" is just a collection of patterns you've never written down:
 - Sentences you'd never start with
 - Words you'd never use
-- Opinions you repeat without realizing
+- Opinions you repeat without realising
 - Structures you default to
 - Things that make you cringe
 
@@ -85,7 +85,7 @@ VOICE & PERSONALITY (15 questions)
 - What I sound like when I'm excited vs. skeptical
 
 STRUCTURAL PREFERENCES (15 questions)
-- How I organize ideas
+- How I organise ideas
 - My relationship with lists, headers, bullets
 - How I handle transitions
 - My default content structures
@@ -194,7 +194,7 @@ Once you have your voice file, you can:
 ## Key MD Files to Create (Ruben's Recommendations)
 
 1. **CLAUDE PROMPTING COOKBOOK.md**, How to prompt Claude effectively
-2. **MARKETING GENIUS.md**, Covers 13 favorite marketing books
+2. **MARKETING GENIUS.md**, Covers 13 favourite marketing books
 3. **ANTI AI WRITING STYLE.md**, How to NEVER write like AI
 4. **COPYWRITING.md**, The 6 copywriting experts' playbook
 5. **VOICE_PROFILE.md**, Who you are, what you stand for

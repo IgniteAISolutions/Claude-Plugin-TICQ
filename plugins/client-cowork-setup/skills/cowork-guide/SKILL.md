@@ -43,7 +43,7 @@ Prevents a person who wanted their inbox sorted getting a paragraph about `/tria
 
 **2. Answer.** Read the whole `README.md`. Give the four lines for the skill they
 asked about, in the guide's words: what it does, when to use it, what to type, what it
-never does. If they asked for everything, give the four rules and the sixteen commands
+never does. If they asked for everything, give the four rules, the release rule and the twenty-four commands
 at one line each, under 250 words, everyday skills first. Then offer once to copy
 `docs/Cowork-User-Guide_v0.2.0.docx` into `Library/Reference/`; on a yes copy
 it and confirm the full path. Prevents an answer from memory that drifts from paper.
@@ -102,7 +102,7 @@ it says what they will get.
 
 - **The README is missing.** Say the guide did not ship with this install and tell
   them to ask {{CLIENT_CONTACT}} for it. Do not write a guide from memory.
-- **They ask for a skill that is not in the plugin.** Say it is not one of the sixteen,
+- **They ask for a skill that is not in the plugin.** Say it is not one of the twenty-four,
   and if it sounds like a task they do, point at `/twin`.
 - **`progress.md` is missing on a seat that has been used for weeks.** Create it,
   mark the seat start as unknown, and build the record from now. Do not guess history.

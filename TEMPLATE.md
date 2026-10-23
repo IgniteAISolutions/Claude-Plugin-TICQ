@@ -8,10 +8,10 @@ plugin. Budget under an hour.
 
 | Placeholder | What goes in it | Example of the shape | Where it appears |
 |---|---|---|---|
-| `{{CLIENT_NAME}}` | The company name, as the client writes it | Northgate Advisory | `.claude-plugin/marketplace.json`, `README.md`, `plugins/client-cowork-setup/README.md`, `plugins/client-cowork-setup/docs/Cowork-User-Guide_v0.2.0.docx` (cover and footer) |
+| `{{CLIENT_NAME}}` | The company name, as the client writes it | Northgate Advisory | `.claude-plugin/marketplace.json`, `README.md`, `plugins/client-cowork-setup/README.md`, `plugins/client-cowork-setup/LICENSE`, `plugins/client-cowork-setup/docs/knowledge-base-guide.md`, `plugins/client-cowork-setup/docs/Cowork-User-Guide_v0.2.0.docx` (cover and footer) |
 | `{{CLIENT_SLUG}}` | The company name in lowercase-hyphen form, used in the plugin name | northgate-advisory | `README.md`, `plugins/client-cowork-setup/docs/for-the-installer.md` |
-| `{{CLIENT_CONTACT}}` | The named lead at the client: the champion people ask first | First name, or first and last | `README.md`, `plugins/client-cowork-setup/README.md`, `plugins/client-cowork-setup/skills/cowork-guide/SKILL.md`, `plugins/client-cowork-setup/docs/Cowork-User-Guide_v0.2.0.docx` (rules page and Who to ask) |
-| `{{CLIENT_CONTACT_EMAIL}}` | The lead's work email | name@northgate.example | `README.md`, `plugins/client-cowork-setup/README.md`, `plugins/client-cowork-setup/docs/Cowork-User-Guide_v0.2.0.docx` (Who to ask) |
+| `{{CLIENT_CONTACT}}` | The named lead at the client: the champion people ask first | First name, or first and last | `README.md`, `plugins/client-cowork-setup/README.md`, `plugins/client-cowork-setup/docs/knowledge-base-guide.md`, `plugins/client-cowork-setup/skills/cowork-guide/SKILL.md`, `plugins/client-cowork-setup/docs/Cowork-User-Guide_v0.2.0.docx` (rules page and Who to ask) |
+| `{{CLIENT_CONTACT_EMAIL}}` | The lead's work email | name@northgate.example | `README.md`, `plugins/client-cowork-setup/README.md`, `plugins/client-cowork-setup/docs/knowledge-base-guide.md`, `plugins/client-cowork-setup/docs/Cowork-User-Guide_v0.2.0.docx` (Who to ask) |
 | `{{CLIENT_REPO}}` | The new client repository, owner and name | IgniteAISolutions/Claude-Plugin-Northgate-Advisory | `README.md` |
 | `{{CLIENT_STORAGE_PATH}}` | The client's shared SharePoint, OneDrive or Google Drive folder that holds `The Business/` | the folder path as it appears on a synced seat | `plugins/client-cowork-setup/templates/CLAUDE.md.template` |
 
@@ -53,9 +53,10 @@ Word and use Find and Replace on each placeholder above.
    licence ID or buyer marker is ever added to the baseline, add its placeholder to the
    table above and set a unique value here.
 
-5. **Bump to 1.0.0.** Change `0.2.0` to `1.0.0` in:
+5. **Bump to 1.0.0.** Change `0.3.0` to `1.0.0` in the files below. The Word guide still
+   reads `0.2.0`, because it was last issued then; change that one from `0.2.0`.
    - `plugins/<client-slug>-cowork-setup/.claude-plugin/plugin.json` (`version`)
-   - `.claude-plugin/marketplace.json` (both `version` fields)
+   - `.claude-plugin/marketplace.json` (the metadata `version` and the setup plugin's entry)
    - `README.md` (the plugin table)
    - `plugins/<client-slug>-cowork-setup/README.md` (the version line under the title
      and the footer)
@@ -86,3 +87,10 @@ Word and use Find and Replace on each placeholder above.
 - Install from the new repository on one seat and run `/health`. It reports the version
   loaded; it must say 1.0.0.
 - Run the client-isolation check against the new repository before the client is added.
+- Confirm the licence position on the paraphrased Claude Academy material in
+  `references/volatile-facts.md` under the Partner Network agreement, and on the voice
+  interview carried in `skills/cowork-interview/references/voice-100q.md`, which derives
+  from a named third party. Open as of 23 October 2026.
+- The knowledge base templates and worked examples use one invented business, Fernhill
+  Garden Design. Leave them: setup builds from the client's own answers and never copies
+  the example into a client folder. No real client appears anywhere in this repository.

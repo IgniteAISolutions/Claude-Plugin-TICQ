@@ -1,0 +1,37 @@
+---
+type: policy
+title: "How the business uses its knowledge base"
+owner: "[NAMED PERSON]"
+source: "[PATH TO THE SETUP INTERVIEW SOURCE]"
+captured: [YYYY-MM-DD]
+last_verified: [YYYY-MM-DD]
+review_after: [YYYY-MM-DD, 180 DAYS ON]
+trust: unreviewed
+status: current
+sensitivity: internal
+zone: private
+---
+# How [COMPANY] uses its knowledge base
+
+Written from [COMPANY]'s own answers at setup. Where [COMPANY] has an AI policy, a DPIA or a
+manifesto, the stricter rule wins and is named here.
+
+1. **What goes in.** [FROM THE INTERVIEW: HOW THE BUSINESS WORKS, WHAT IT DECIDED, WHO IT DEALS WITH]
+2. **Personal data.** [FROM THE INTERVIEW. DEFAULT: NAMES, BUSINESS CONTACT DETAILS AND WHAT WAS BOUGHT OR AGREED, NOTHING MORE]
+3. **Who sees what.** `internal` pages: everyone at [COMPANY] with a seat. `leadership` pages: [NAMED PEOPLE]. `confidential` pages: [OWNER] only.
+4. **What never goes in.** [[what-never-goes-in]].
+5. **What leaves.** Nothing from a client's folder is published, quoted or used for another client except through `/release`: anonymised by default, named only with consent recorded on the client's folder card.
+6. **Who says yes.** [OWNER] answers the weekly review. A page is company knowledge only after that yes.
+7. **Governance this inherits.** [LIST THE CLIENT'S OWN DOCUMENTS READ AT SETUP, OR "None at setup. Basic governance applies until the business completes a governance step."]
+
+**Applies to.** Every folder in the working tree.
+
+## History
+
+## Connections
+
+- [[what-never-goes-in]]: the never list this policy points to.
+
+## Sources
+
+- [[PATH TO THE SETUP INTERVIEW SOURCE]] (added by [NAME], [YYYY-MM-DD]): the answers to the governance questions.

@@ -1,7 +1,7 @@
 {
   "name": "client-cowork-setup",
-  "version": "0.2.0",
-  "description": "Sets a client team up on Claude Cowork. Day one opens by reading the person's real folder and doing one live task before any setup; each piece of setup is then the repair for a miss they just watched. Subject-named folders, every setting decided, voice mined from real writing, the first task turned into a tested skill with /twin, /guide as the coach, /end closing every session, /audit and /mot keeping it improving, /sub-agent for wide jobs on lighter models. Drafts only, never sends.",
+  "version": "0.3.0",
+  "description": "Sets a client team up on Claude Cowork, then builds their knowledge base. Day one reads the person's real folder and does one live task first; each piece of setup repairs a miss they just watched. Voice mined from real writing, the first task made a tested skill with /twin, /end closing every session, /audit and /mot keeping it improving. Then /ember-setup makes the folder a governed knowledge base in Obsidian, refreshed weekly, client material anonymised before it goes public. Drafts only.",
   "author": {
     "name": "IgniteAI Solutions"
   },
@@ -16,6 +16,11 @@
     "interview",
     "skills",
     "adoption",
-    "sub-agent"
-  ]
+    "sub-agent",
+    "knowledge-base",
+    "obsidian",
+    "governance",
+    "anonymisation"
+  ],
+  "license": "LicenseRef-IgniteAI-Proprietary"
 }

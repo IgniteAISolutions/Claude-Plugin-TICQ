@@ -5,14 +5,14 @@
   },
   "metadata": {
     "description": "Claude Cowork plugins built for {{CLIENT_NAME}} by IgniteAI Solutions.",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "plugins": [
     {
       "name": "client-cowork-setup",
       "source": "./plugins/client-cowork-setup",
-      "description": "Sets a {{CLIENT_NAME}} seat up on Claude Cowork and keeps it improving. Drafts only, never sends.",
-      "version": "0.2.0",
+      "description": "Sets a {{CLIENT_NAME}} seat up on Claude Cowork, then builds the business's knowledge base in place: governed, kept true weekly, client material anonymised before it goes public. Drafts only, never sends.",
+      "version": "0.3.0",
       "author": {
         "name": "IgniteAI Solutions"
       }

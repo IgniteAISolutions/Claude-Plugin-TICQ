@@ -47,3 +47,15 @@ On the build day: watch one task fire and read what it produced, so the person h
 seen the mechanism once with their own eyes. The other six are verified by their
 first real run in the days that follow, and checked again at day 30 by `/health`,
 which lists every scheduled task and says whether it ran and where.
+
+## Two more, from the knowledge base
+
+Step 11 stages two further tasks, once per firm, on the owner's seat: Ember weekly and
+Ember monthly. Their table, prompts and the cloud or desktop rule are in
+`../../../references/ember-schedules.md`. They are the one exception to "all local":
+each may run in the cloud, but only where `/ember-setup` proved the storage connector can
+rewrite a file from a scheduled-style run, and the proof is written in
+`System/Ember/connections.md`. The weekly run is placed to land before the owner's own
+weekly review in the rhythm they already keep. On the Friday default it also lands
+before the Weekly flywheel, so `/audit` reads that week's refresh; on any other day
+`/audit` reads the most recent one. Like the seven, neither sends nor deletes.
