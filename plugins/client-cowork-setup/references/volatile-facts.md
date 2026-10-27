@@ -139,6 +139,21 @@ namespaces the plugin's skills. Components are discovered by directory conventio
 the manifest is otherwise optional. Version it like any dependency, because that is what
 makes updates trackable across a team.
 
+## Node.js minimum versions
+
+Verified 27-10-2026 from `nodejs.org/dist/index.json`, the security release of
+20-10-2026.
+
+| Line | Lowest safe version |
+|---|---|
+| 22 | 22.23.4 |
+| 24 | 24.22.1, the one to recommend |
+| 26 | 26.12.1 |
+
+Every other line from 26 down gets no security fixes. `hooks/node-version-check.js` holds
+the working copy of this table, so change both together. Re-check at every Node.js
+security release.
+
 ## Still open
 
 | Fact | Why it is open |

@@ -1,6 +1,6 @@
 {
   "name": "client-cowork-setup",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Sets a client team up on Claude Cowork. Day one opens by reading the person's real folder and doing one live task before any setup; each piece of setup is then the repair for a miss they just watched. Subject-named folders, every setting decided, voice mined from real writing, the first task turned into a tested skill with /twin, /guide as the coach, /end closing every session, /audit and /mot keeping it improving, /sub-agent for wide jobs on lighter models. Drafts only, never sends.",
   "author": {
     "name": "IgniteAI Solutions"

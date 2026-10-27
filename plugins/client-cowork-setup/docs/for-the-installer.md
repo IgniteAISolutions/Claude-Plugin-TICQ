@@ -111,6 +111,19 @@ Cowork loads plugin hooks and never runs them. Where it does not run, the sub-ag
 carries the same rule inline. Test it on a live Cowork seat and write the result here
 with the date.
 
+## The Node check
+
+`hooks/node-version-check.js` runs when a session starts or resumes. It reads the
+computer's Node.js version. Where that version has a known security flaw, or its line no
+longer gets security fixes, it tells the person once and names the command that updates
+it. It installs nothing: updating software is the person's call, or their IT team's. It
+is silent when Node.js is up to date and fails open on any error. The lowest safe
+versions are under Node.js minimum versions in `references/volatile-facts.md`.
+
+Tested on 27-10-2026 against sixteen version strings and a forced error, all passing.
+**Not yet seen firing in a live session**, on Claude Code or on Cowork. Test it on a live
+seat and write the result here with the date.
+
 ## Scheduled tasks
 
 Seven, all local, staged by a person on the build day. The table of what runs when,
