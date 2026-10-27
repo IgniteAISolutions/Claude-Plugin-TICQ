@@ -1,6 +1,18 @@
 {
-  "description": "Refuses a general-purpose sub-agent sent without its model set. The sub-agent skill carries the same rule for surfaces where hooks do not run.",
+  "description": "Refuses a general-purpose sub-agent sent without its model set; the sub-agent skill carries the same rule for surfaces where hooks do not run. Warns at session start when this computer's Node.js has a known security flaw.",
   "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/node-version-check.js\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
     "PreToolUse": [
       {
         "matcher": "Agent|Task",

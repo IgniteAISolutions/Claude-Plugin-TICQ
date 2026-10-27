@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.1, 27 October 2026
+
+### Added
+
+- **A Node.js check at session start.** Where the computer's Node.js has a known security
+  flaw, or its line no longer gets security fixes, the person is told once, with the
+  command that updates it. It installs nothing and stays silent when Node.js is up to
+  date. Fails open. `hooks/node-version-check.js`, `hooks/hooks.json`
+
 ## multiplayer-ai-starter 0.1.1, 22 October 2026
 
 ### Changed
